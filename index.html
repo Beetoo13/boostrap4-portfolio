@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style>
+      .slider {
+        background: url("fondo1.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+      .imagenTarjetas {
+        height: 30rem;
+        width: 40rem;
+      }
+      .espaciadoLetras {
+        /* 16 * 0.0625 = 1px */
+        letter-spacing: 0.625rem;
+      }
+      .nombreBeto p{
+        position: absolute;
+        left: 6%;
+        bottom: 15%;
+      }
+      .nombreBeto img {
+        border-radius: 15%;
+      }
+    </style>
+    <title>A little bit about me</title>
+  </head>
+  <body class="bg-secondary">
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+      data-pause="false"
+      data-interval="8000"
+    >
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img
+            src="Imagenes/Carousel/fondo1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Imagenes/Carousel/Qz59PFc.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Imagenes/Carousel/tcce9gizs8v11.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Fin slide -->
+
+    <!-- Nav -->
+
+    <nav
+      class="navbar navbar-dark bg-dark fixed-top navbar-expand-sm"
+      id="nav-menu"
+    >
+      <!-- Logo -->
+      <div class="nombreBeto">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Imagenes/Img nav/img-beto.jpg"
+            width="60"
+            height="60"
+            class="d-inline-block align-top"
+            alt="Logo Post"
+          />
+          <p>Beto Quezada</p>
+        </a>
+      </div>
+      <!--End Logo -->
+
+      <!-- toggle -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--End toggle -->
+
+      <!-- Menu -->
+      <div class="navbar-nav collapse navbar-collapse justify-content-end" id="menu">
+        <a class="nav-item nav-link active" href="#">Inicio</a>
+
+        <a class="nav-item nav-link active" href="#">Proyectos</a>
+
+        <a class="nav-item nav-link active" href="#">¿Quién soy?</a>
+
+        <a class="nav-item nav-link active" href="#">Contacto</a>
+      </div>
+      <!--End Menu -->
+    </nav>
+
+    <!-- Fin nav -->
+
+    <!-- Title 2 -->
+    <h1
+      class="display-1 text-white font-italic espaciadoLetras text-center mt-3"
+    >
+      Portfolio
+    </h1>
+    <!-- Fin title 2 -->
+
+    <!-- Cards -->
+
+    <section class="container mt-5">
+      <div class="card-deck">
+        <div class="card border-0 shadow-lg text-white bg-dark">
+          <img
+            src="Imagenes/Card deck/Nodejsbot.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Discord bot using NodeJs</h5>
+            <p class="card-text text-justify">
+              Un pequeño proyecto en el que desarrollé un bot de discord que recibe peticiones
+              y responde a través de mensajes y acciones para los usuarios de discord.
+            </p>
+            <p class="card-text text-center">
+              <a class="btn btn-primary" href="#" role="button">Visitar</a>
+            </p>
+          </div>
+        </div>
+        <div class="card border-0 shadow-lg text-white bg-dark">
+          <img
+            src="Imagenes/Card deck/RecipeApp react image.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Recipe app using ReactJs</h5>
+            <p class="card-text text-justify">
+              Un proyecto introductorio que realicé usando react con el cual podemos
+              realizar busquedas de recetas por medio de los ingredientes en una barra de busqueda.
+            </p>
+            <p class="card-text text-center">
+              <a class="btn btn-primary" href="#" role="button">Visitar</a>
+            </p>
+          </div>
+        </div>
+        <div class="card border-0 shadow-lg text-white bg-dark">
+          <img
+            src="Imagenes/Card deck/image downloader image.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Image downloader using Python</h5>
+            <p class="card-text text-justify">
+              Con este proyecto se le permite al usuario introducir un URL con el cual el
+              programa realizará la descarga de la imagen del url de instagram buscando en el DOM.
+            </p>
+            <p class="card-text text-center">
+              <a class="btn btn-primary" href="#" role="button">Visitar</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fin cards -->
+
+    <!-- Jumpbotron -->
+
+    <div class="jumbotron mt-5 rounded-0">
+      <div class="container">
+        <h1 class="display-4">Hola a todos!</h1>
+        <p class="lead">
+          Mi nombre es Alberto, aunque todos mis amigos me conocen por Beto, soy un
+          estudiante de ingeniería en sistemas, me gusta programar, jugar videojuegos,
+          escuchar musica y diseñar!
+        </p>
+        <hr class="my-4" />
+        <div class="d-flex justify-content-between align-items-center">
+          <p>
+            Si quieres conocer un poco más sobre mi y algunos otros de mis hobbies da click 
+            en el botón a continuación
+          </p>
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Conoce más sobre mi</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin Jumpbotron -->
+
+    <!-- Texto piterisimo -->
+
+    <section class="container-fluid">
+      <p
+        class="mt-3 text-center font-italic font-weight-bold display-4 text-white"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, id!
+      </p>
+      <p class="text-white lead text-justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+      <p
+        class="bg-primary text-white p-3 text-justify w-25 float-lg-left d-md-none d-sm-none d-none d-lg-block mr-3 rounded"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+      <p
+        class="bg-primary text-white p-3 text-justify d-sm-block d-md-block d-lg-none rounded"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+      <p class="text-justify text-white">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+      <p class="text-justify text-white">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+      <p class="text-justify text-white">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+      <p class="text-justify text-white">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+        excepturi nam sunt ducimus similique praesentium ex dicta, ea, nemo
+        nesciunt libero sequi non! Fuga suscipit, quae laboriosam architecto
+        deserunt deleniti sunt reiciendis voluptates quidem labore, unde
+        excepturi ratione natus earum veniam dolores enim, error cupiditate!
+        Consectetur sunt cumque possimus. Maiores iste qui ipsam eveniet hic
+        sequi quisquam sed aut, at officiis reprehenderit expedita tenetur vel
+        amet laboriosam laborum. Possimus vel tenetur iste consectetur, aliquam
+        ratione veniam nostrum nemo aut a voluptatum cumque soluta ab porro
+        ducimus odio voluptates, nihil nisi? Nihil, veritatis laborum? Id
+        suscipit pariatur odio sequi dolore quibusdam?
+      </p>
+    </section>
+
+    <!-- Fin texto piterisimo -->
+
+    <!-- Tarjetas (jumbotron) -->
+
+    <div class="jumbotron rounded-0">
+      <div class="container-fluid d-lg-flex justify-content-center mb-5">
+        <div
+          class="col-12 col-lg-7 align-self-center align-self-md-center col-sm-12"
+        >
+          <h1 class="">
+            First featurette heading.
+            <span class="text-muted">It'll blow your mind.</span>
+          </h1>
+          <p class="text-justify lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            consequuntur, sed earum magnam nesciunt ipsum a eligendi temporibus
+            laudantium! Minima aperiam animi temporibus molestiae quidem
+            repellat! Unde neque dolor quaerat repellendus quisquam, quis illo
+            fuga dolore blanditiis magnam expedita eos magni ducimus! Dolores
+            velit unde nulla nisi doloribus cumque libero delectus,
+            reprehenderit nesciunt odit corrupti nam qui repellat eos rem.
+          </p>
+        </div>
+        <div class="col-12 col-lg-5 col-sm-12">
+          <img
+            src="Imagenes/Tarjetas jumbotron/1473308866817.jpg"
+            alt=""
+            class="img-fluid shadow-lg"
+          />
+        </div>
+      </div>
+
+      <hr class="container-fluid" />
+
+      <div class="container-fluid d-lg-flex justify-content-center mt-5">
+        <div class="col-12 col-lg-5 col-sm-12 col-md-12">
+          <img
+            src="Imagenes/Tarjetas jumbotron/1483422599983.jpg"
+            alt=""
+            class="img-fluid shadow-lg"
+          />
+        </div>
+        <div
+          class="col-12 col-lg-7 col-sm-12 col-md-12 align-self-center align-self-md-center"
+        >
+          <h1 class="mt-md-3 mt-sm-3 mt-3 m-lg-auto">
+            Second featurette heading.
+            <span class="text-muted">It'll blow your mind again...</span>
+          </h1>
+          <p class="text-justify lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            consequuntur, sed earum magnam nesciunt ipsum a eligendi temporibus
+            laudantium! Minima aperiam animi temporibus molestiae quidem
+            repellat! Unde neque dolor quaerat repellendus quisquam, quis illo
+            fuga dolore blanditiis magnam expedita eos magni ducimus! Dolores
+            velit unde nulla nisi doloribus cumque libero delectus,
+            reprehenderit nesciunt odit corrupti nam qui repellat eos rem.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin tarjetas -->
+
+    <!-- Formulario -->
+    <section class="container">
+      <h3 class="text-center text-light">Formulario de contacto</h3>
+      <p class="lead text-justify text-lg-center text-md-center text-white">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+        voluptas modi nemo necessitatibus? Ad culpa nam, doloremque accusamus
+        deleniti vel?
+      </p>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-6 ">
+          <form action="">
+            <div class="form-group row">
+              <label
+                for=""
+                class=" col-form-label d-none d-sm-none d-lg-block text-white"
+                >Nombre:</label
+              >
+              <input
+                type="text"
+                placeholder="Escribe tu nombre aquí"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group row">
+              <label
+                for=""
+                class="col-form-label d-none d-sm-none d-lg-block text-white"
+                >Email:</label
+              >
+              <input
+                type="email"
+                placeholder="Escribe tu email"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group row">
+              <div class="col-4"></div>
+              <button class="btn btn-primary col-4">
+                Enviar
+              </button>
+              <div class="col-4"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Fin formulario -->
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid d-flex justify-content-center">
+        <span class="text-light pb-3">
+          &copy; Alberto Quezada Caro - 11 de junio de 2019</span
+        >
+      </div>
+    </footer>
+    <!-- Fin footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
